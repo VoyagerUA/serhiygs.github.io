@@ -1,2 +1,2 @@
-# serhiygs.github.io
-My Portfolio
+# serhiy.github.io
+My portfolio work

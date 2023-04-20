@@ -1,1 +1,406 @@
-<html><body><h1>My Portfolio</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, user-scalable=0, shrink-to-fit=no">
+-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Example #1</title>
+   <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   <link rel="stylesheet" href="./css/style.css?ver=20">
+</head>
+<body id="id_body">
+
+<div id="container">
+
+   <header id="id_header">
+
+      <div id="d1" class="class_header_div">
+
+         <div id="d1_1">
+            <div id="konvert" class="class_konvert_trubka">info@webmail.com</div>
+            <div id="trubka" class="class_konvert_trubka">+987&nbsp;8762&nbsp;868&nbsp;82</div>
+         </div>
+
+         <div id="d1_2">
+            <div id="fb1" class="class_messenger"></div>
+            <div id="twit1" class="class_messenger"></div>
+            <div id="inst1" class="class_messenger"></div>
+            <select id="mova" name="name_mova" >
+               <option value="1">English</option>
+               <option value="2">Francais</option>
+               <option value="3">Українська</option>
+            </select>            
+         </div>
+   
+      </div>
+
+      <div id="d2" class="class_header_div">
+
+         <div id="d2_1">
+            <div id="logo">LOGO</div>
+            <nav>
+               <a class="class_menu" href="#">Home</a>
+               <a class="class_menu" href="#about_link">About</a>
+               <a class="class_menu" href="#services_link">Services</a>
+               <a class="class_menu" href="#portfolio_link">Portfolio</a>
+               <a class="class_menu" href="#testimony_link">Testimony</a>
+               <a class="class_menu" href="#news_link">News</a>
+               <a class="class_menu" href="#contact_link">Contact</a>
+     
+            </nav>
+            <div id="gq">
+               <input id="get_quote" type="button" value="Get A Quote">
+               <div id="lupa1"></div>
+            </div>
+  
+         </div>
+
+         <div id="d2_2">
+            <input id="poshuk" type="text">
+            <div id="lupa2"></div>
+         </div>
+
+
+
+      </div>
+
+
+
+
+
+   </header>
+
+   <main id="id_main">
+
+      <div id="block_content1">
+
+         <div id="sub_block1_content1">
+
+            <div id="bc1_1">
+               <p id="bc1_1_p1">Advance Innovation<br>For IT Solutions.</p>
+               <p id="bc1_1_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Curabi sed metus id et viverra augue.</p>
+               <div id="bc1_1_menu"> 
+                  <input id="bc1_1_menu_input" type="button" value="Get In Touch">
+                  <a id="a_our_service" href="#block_content3">Our Service</a>
+               </div>
+            </div>
+
+         </div>
+            
+
+         <div id="sub_block2_content1">
+            <div id="bc2_1"></div>
+            <div id="bc2_2"></div>
+            <div id="bc2_3">
+               <!-- =====================================================================================================  -->
+               <div id="id_div_svg_grafik">
+                  <svg id="id_svg_grafik" onload="Prokrutka(id_mytext, Procent, Zatrymka/Procent)" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 100 100" >
+                  <defs>
+                     <linearGradient id="lg">
+                        <stop offset="0%" stop-color="rgb(70, 87, 207)" stop-opacity="1"/>
+                        <stop offset="33%" stop-color="rgb(207, 95, 182)" stop-opacity="1"/>
+                        <stop offset="66%" stop-color="rgb(247, 186, 123)" stop-opacity="1"/>
+                        <stop offset="100%" stop-color="rgb(255, 203, 112)" stop-opacity="1"/>
+                     </linearGradient> 
+                  </defs>
+                  <g>
+                     <circle cx="50"  cy="50" r="40" fill="none" stroke="rgb(201, 215, 255)" stroke-width="2"/>   
+                     <circle cx="150" cy="50" r="40" fill="none" stroke-dasharray="251.2" stroke-dashoffset="251.2" stroke="url(#lg)" stroke-width="4" transform="rotate(-90 100 100)">
+                        <animate id='id_svg_animate' attributeName="stroke-dashoffset" begin="0" from="0" to="0" dur="0" fill="freeze" repeatCount="1"/>
+                     </circle>  
+                     <text id="id_mytext" x="50" y="55" text-anchor="middle" fill="url(#lg)" stroke="url(#lg)">72%</text>
+                  </g>
+                  </svg> 
+                  <script>
+                  var Procent = 72;
+                  var Zatrymka = 5000;
+                  var Radius = 40;
+                  var DovzhinaKola = 2*3.14*Radius;
+                  id_div_svg_grafik.style.flex = '0.75';
+                  id_div_svg_grafik.style.margin = '0';
+                  id_div_svg_grafik.style.padding = '0';
+                  id_div_svg_grafik.style.boxSizing = 'border-box';
+                  id_div_svg_grafik.style.width = '100%';
+                  id_div_svg_grafik.style.height = '100%';
+                  id_svg_animate.setAttribute('from', DovzhinaKola);
+                  id_svg_animate.setAttribute('to', DovzhinaKola - (DovzhinaKola * 0.01 * Procent));
+                  id_svg_animate.setAttribute('dur', Zatrymka / 1000);
+                  id_mytext.style.fontFamily = 'Poppins';
+                  id_mytext.style.fontSize = '16px';
+                  //id_mytext.style.fontSize = 'clamp(10px, 1.6vmax, 24px)';
+                  //id_mytext.style.fontSize = 'clamp(12px, 16px, 24px)';
+                  //id_mytext.style.fontFamily = 'var(--font-family)';
+                  //id_mytext.setAttribute('font-size', "26px");
+                  //id_mytext.style.fontSize = 'var(--fontrozmir)';
+                  //id_mytext.style.fontSize = bc2_3.offsetWidth / 3.5 +'px';
+                  function Prokrutka(obj, procent, zatrymka) {
+                     let i=0;
+                     let ST=setInterval(()=>{i++;if(i<=procent){ obj.textContent=i+'%';}else{clearTimeout(ST);}},zatrymka);
+                  }
+                  </script>
+               </div>
+               <!-- =====================================================================================================  -->
+                  <!--
+                                    <div id="grafik_container">
+                                       <div id="grafik_zalyvka"></div>
+                                       <div id="grafik_osnova"></div>
+                                       <div id="grafik_kolo"></div>
+                                       <div id="grafik_text" data-procent="72"></div>
+                                    </div>
+                  -->               
+               <div id="bc2_3_div">
+                  <p id="bc2_3_div_p1">Business Growth</p>
+                  <p id="bc2_3_div_p2">Level is high</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="block_content2">
+         <div id="sub_block1_content2">
+            <div id="sb1c2_1"></div>
+            <div id="sb1c2_2"></div>
+            <div id="sb1c2_3">
+               <div id="sb1c2_3_div1"></div>
+               <p id="sb1c2_3_p1">Lorem ipsum dol sit amet, consec adipiscing.</p>
+               <div id="sb1c2_3_div2"><span id="sb1c2_3_span1" class="class_ryska"></span><span id="sb1c2_3_span2" class="class_ryska"></span></div>
+            </div>
+         </div>
+
+         <div id="sub_block2_content2">
+
+            <div id="sb2c2">
+               <p id="sb2c2_p1">We are the solution<br>for IT problems</p>
+               <p id="sb2c2_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie<br>faucibus cras donec consequat urna. Mauris malesuada viverra<br>nibh convallis consectetur adipiscing vitae.</p>
+               <input id="sb2c2_input" type="button" value="More About">                     
+            </div>
+
+         </div>
+      </div>
+
+
+<a name="services_link" class="class_link"></a> 
+
+      <div id="block_content3">
+
+         <div id="sub_block_content3">
+
+            <div id="sbc3_1">
+               <p id="sbc3_1_p">Our Services<br>For Technology<br>You Needs</p>
+               <input id="sbc3_1_input" type="button" value="Load More">
+            </div>
+
+            <div id="sbc3_2">
+
+               <div id="sbc3_2_1">
+                  <div id="sbc3_2_1_div"></div>
+                  <p id="sbc3_2_1_p1">Cyber Security</p>
+                  <p id="sbc3_2_1_p2">Lorem ipsum dolor sit amet consectetur</p>
+               </div>
+
+               <div id="sbc3_2_2">
+                  <div id="sbc3_2_2_div"></div>
+                  <p id="sbc3_2_2_p1">IT Consultant</p>
+                  <p id="sbc3_2_2_p2">Lorem ipsum dolor sit amet consectetur</p>
+               </div>
+
+               <div id="sbc3_2_3">
+                  <div id="sbc3_2_3_div"></div>
+                  <p id="sbc3_2_3_p1">IT Consultant</p>
+                  <p id="sbc3_2_3_p2">Lorem ipsum dolor sit amet consectetur</p>
+               </div>
+
+               <div id="sbc3_2_4">
+                  <div id="sbc3_2_4_div"></div>
+                  <p id="sbc3_2_4_p1">Cyber Security</p>
+                  <p id="sbc3_2_4_p2">Lorem ipsum dolor sit amet consectetur</p>
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+
+      <div id="block_content4">
+
+         <div id="sub_block_content4">
+
+<a name="portfolio_link" class="class_link"></a> 
+
+            <div id="ssbc4_1">
+               <div id="b1c4">
+                  <div id="b1c4_div"></div>
+                  <p id="b1c4_p1">Brand Software Solution</p>
+                  <p id="b1c4_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie faucibus</p>
+               </div>
+
+
+               <div id="b2c4">
+                  <p id="b2c4_p">See Our Works<br>or Portfolio</p>
+                  <input id="b2c4_input" type="button" value="More About">
+               </div>
+
+            </div>   
+
+            <div id="ssbc4_2">
+
+               <div id="b3c4">
+                  <div id="b3c4_div"></div>
+                  <p id="b3c4_p1">Brand Software Solution</p>
+                  <p id="b3c4_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie faucibus</p>
+               </div>
+
+               <div id="b4c4">
+                  <div id="b4c4_div"></div>
+                  <p id="b4c4_p1">Brand Software Solution</p>
+                  <p id="b4c4_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie faucibus</p>
+               </div>
+            </div>   
+
+         </div>                  
+      </div>
+
+<a name="about_link" class="class_link"></a> 
+
+      <div id="block_content5">
+         <div id="sub_block_content5">
+            <h1 id="bc5_h1">What People Say About Us</h1>
+
+            <div id="sbc5_div1">
+               <div id="sbc5_div1_1">
+                  <div id="sbc5_div1_1_foto"></div>
+                  <div id="sbc5_div1_1_content">
+                     <p id="sbc5_div1_1_p1">Lorem ipsum dolor sit amet, consectetur adipiscing elitoe. Molestie faucibus</p>
+                     <p id="sbc5_div1_1_p2">Serhiy Developer / Businessman</p>
+                  </div>
+               </div>
+               <div id="sbc5_div1_2">
+                  <div id="sbc5_div1_2_foto"></div>
+                  <div id="sbc5_div1_2_content">
+                     <p id="sbc5_div1_2_p1">Lorem ipsum dolor sit amet, consectetur adipiscing elitoe. Molestie faucibus</p>
+                     <p id="sbc5_div1_2_p2">Serhiy Developer / Businessman</p>
+                  </div>                           
+               </div>
+               <div id="sbc5_div1_3">
+                  <div id="sbc5_div1_3_foto"></div>
+                  <div id="sbc5_div1_3_content">
+                     <p id="sbc5_div1_3_p1">Lorem ipsum dolor sit amet, consectetur adipiscing elitoe. Molestie faucibus</p>
+                     <p id="sbc5_div1_3_p2">Serhiy Developer / Businessman</p>
+                  </div>
+               </div>
+            </div>
+
+
+            <div id="sbc5_div2">
+
+               <div id="sbc5_div2_1">
+                  <p id="sbc5_div2_1_p1">Great Technology Solution</p>
+                  <p id="sbc5_div2_1_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est ullamcorper mattis lasus eu, ornare imperdiet men sana in condimentium. Viverra id tortor enim pusuere nullam. Vitae tincidunt biblendum quis at viverra etiam enim dictum teb. Sit non accumsan tempus, eu suspendisso quis.</p>
+                  <div id="sbc5_div2_1_div">
+                     <div id="sbc5_div2_1_div_foto"></div>
+                     <div id="sbc5_div2_1_div_1">
+                        <p id="sbc5_div2_1_div_p1">Serhiy Developer</p>
+                        <p id="sbc5_div2_1_div_p2">IT Consultant</p>
+                     </div>
+                     <div id="sbc5_div2_1_div_2">
+                        <div id="sbc5_div2_1_div_2_1" class="class_krapka"></div>
+                        <div id="sbc5_div2_1_div_2_2" class="class_krapka"></div>
+                        <div id="sbc5_div2_1_div_2_3" class="class_krapka"></div>
+                        <div id="sbc5_div2_1_div_2_4" class="class_krapka"></div>
+                     </div>
+                  </div>  
+
+
+               </div>  
+
+<a name="news_link" class="class_link"></a> 
+
+               <div id="sbc5_div2_2">
+                  <p id="sbc5_div2_2_p">Get The Latest<br>News Here</p>   
+
+                  <div id="sbc5_div2_2_1">
+                     <div id="sbc5_div2_2_1_foto"></div>
+                     <div id="sbc5_div2_2_1_content">
+                         <div id="sbc5_div2_2_1_content_div">
+                           <p id="sbc5_div2_2_1_content_div_p1">January 21, 2023</p>
+                           <p id="sbc5_div2_2_1_content_div_p2">by Admin</p>
+                        </div>
+                         <p id="sbc5_div2_2_1_content_p">Lorem ipsum dolor sit amet, consecte adipiscing elit. Est ullamcarper</p>
+                     </div>
+                  </div>
+
+
+                  <div id="sbc5_div2_2_2">
+                     <div id="sbc5_div2_2_2_foto"></div>
+                     <div id="sbc5_div2_2_2_content">
+                        <div id="sbc5_div2_2_2_content_div">
+                           <p id="sbc5_div2_2_2_content_div_p1">January 21, 2023</p>
+                           <p id="sbc5_div2_2_2_content_div_p2">by Admin</p>
+                        </div>
+                        <p id="sbc5_div2_2_2_content_p">Lorem ipsum dolor sit amet, consecte adipiscing elit. Est ullamcarper</p>
+                     </div>
+                  </div>
+
+
+               </div>  
+
+            </div>
+
+         </div>
+         
+      </div>
+
+<a name="testimony_link" class="class_link"></a> 
+
+      <div id="block_content6">
+         <div id="sub_bc6">
+            <p id="bc6_p">Let's Boost Your Business<br>With The Latest Technology</p>
+            <input id="bc6_input" type="button" value="Get In Touch">
+         </div>
+      </div>
+   </main>  
+
+   <footer id="id_footer">
+
+      <div id="subfooter">
+
+         <div id="sf1">
+            <p id="sf1_p1">LOGO</p>
+            <p id="sf1_p2">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Commodo amet posuere<br>porta vitae mi accumson. Ultricies</p>
+            <div id="sf1_1">
+               <div id="fb2" class="class_socnet"></div>
+               <div id="twit2" class="class_socnet"></div>
+               <div id="inst2" class="class_socnet"></div>
+            </div>
+         </div>
+         <div id="sf2">
+            <p id="sf2_p">Services</p>
+            <a id="sf2_a1" href="http://">Cyber Security</a>
+            <a id="sf2_a2" href="http://">IT Consultant</a>
+            <a id="sf2_a3" href="http://">Strategy & Research</a>
+         </div>
+         <div id="sf3">
+            <a name="contact_link" class="class_link"></a> 
+
+            <p id="sf3_p1">Contact</p>
+            <p id="sf3_p2">Office: <span id="sf3_span">4042 Imperial Road UK City</span> </p>
+            <p id="sf3_p3">Phone: <a id="sf3_a_tel" href="tel:+(0411) 425 277 / 425 276">(0411) 425 277 / 425 276</a></p>
+            <p id="sf3_p4">E-mail: <a id="sf3_a_mail" href="mailto:inbox@itsolution.com">inbox@itsolution.com</a></p>
+         </div>
+      </div>
+      
+   </footer>
+   <a id="vgoru" href="#id_header"></a>
+</div>   
+</div>
+<script src="./js/script.js?ver=16"></script>
+<!--  🡳 🠗 ⬇ 🡇 🢃 🡻 🡻 🢃   🡫 -->
+</body>
+</html>
