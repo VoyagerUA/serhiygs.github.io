@@ -3,7 +3,7 @@
 
 
 const min = 0;
-const max = 100;
+const max = 300;
 let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
 let r,g,b,prozoro,povorot;
 
@@ -69,8 +69,6 @@ mySvg.onload = function() {
 
 
 };
-
-
 
 
 
