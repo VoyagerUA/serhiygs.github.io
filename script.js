@@ -75,7 +75,7 @@ mySvg.onload = function() {
 
 
 
-ex1.addEventListener("click", function(){alert("подія 1");});
+//ex1.addEventListener("click", function(){alert("подія 1");});
          
 ex1.addEventListener('mouseenter', (event) => {
   ex1.dataset.content = ex1.innerText;
