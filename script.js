@@ -9,7 +9,8 @@ let r,g,b,prozoro,povorot;
 
 
 const mySvg = document.getElementById("my_svg");
-mySvg.onload = function() {
+//mySvg.onload = function() {
+window.onload = function() {
 
   for (let i = 0; i < 2500; i++) {
     const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
