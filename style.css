@@ -1,0 +1,149 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: aliceblue;
+   font-size: medium;
+
+   overflow: hidden;
+   font-family: 'Roboto', sans-serif;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+}
+
+#div_svg{
+   position: absolute;
+
+   width: 150vmax;
+   height: 150vmax;
+
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   border: 0px solid red;
+
+   /*transform: translateX(-0%) translateY(45%);*/
+   /*transform: scale3d(1.5, 1.5,1);*/
+}
+
+#my_svg{
+   /*background-color: #0b0c10;*/
+   background-color: rgba(10, 15, 30, 0.9);
+
+   /*animation: spin 450s linear infinite;*/
+
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+@keyframes spin {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
+}
+
+
+
+#container{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   /*    background-color: rgba(50, 50, 50, 0.9);*/
+}
+header{
+   flex: 2;
+   border: 0px solid rgb(253, 1, 1);
+}
+
+main{
+   position: relative;
+   flex: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 0px solid green;
+}
+
+a{
+   will-change: transform;
+   transition:  transform 0.25s ease-out ;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 20vmax;
+   height: 10vmax;
+   text-decoration: none;
+   border-radius: 0.5vmax;
+
+   /*Тінь з плавним переходом від світлого до темного кольору:*/
+   /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+
+   /*Тінь з плавним переходом від темного до світлого кольору:*/
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.6);
+
+   /*Тінь з виглядом глибини:*/
+   /*box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);*/
+
+   /*Тінь з виглядом випуклості:*/
+   /*box-shadow: 0 -10px 20px -10px rgba(0, 0, 0, 0.5);*/
+
+   /*Тінь з виглядом м'якості:*/
+   /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2);*/
+}
+#ex1{
+   /*
+      transform: scale(0);
+      animation: scaleUp 1.0s ease-in-out forwards;
+      animation-delay: 1s; 
+   */
+
+
+   transform: scale(0);
+
+   font-size: 2.5vmax;
+
+   text-align: center;
+   /*background-color: rgb(6, 66, 46);*/
+
+   background: linear-gradient(135deg,  rgba(144,238,144, 0.6) 0%, rgba(0,255,0, 0.6) 25%, rgba(0,128,0,1) 50%, rgba(6, 66, 46, 1) 100%);
+
+   background-size: 200% 200%;
+   background-position: 100% 100%;
+
+}
+#ex1:hover{
+   transition: background-position 0.5s ease-in-out;
+
+   background-position: 0% 0%;
+   /*background-position: 100% 100%;*/
+}
+
+
+ @keyframes scaleUp {
+   0% {
+     transform: scale(0);
+   }
+   100% {
+     transform: scale(1);
+
+  
+   }
+ }
+
+
+
+
+
+
+
+footer{
+   flex: 1;
+   border: 0px solid blue;
+}
