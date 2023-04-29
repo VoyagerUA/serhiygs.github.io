@@ -88,7 +88,7 @@ person.style.width = personWidth*(pmin * 0.01)+'px';
 person.style.height = personHeight*(pmin * 0.01)+'px';
 
 //person.style.backgroundColor = personBgColor;
-person.style.backgroundImage = `url('./img/2.gif')`;
+person.style.backgroundImage = `url('./img/3.gif')`;
 person.style.backgroundSize = `cover`;
 person.style.backgroundRepeat = `no-repeat`;
 person.style.backgroundPosition = `center`;
