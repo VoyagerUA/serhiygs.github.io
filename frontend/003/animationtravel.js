@@ -58,6 +58,7 @@ function StartAnimationTravel(address){
   .then(data => {
     // Розшифровуємо дані з файлу та зберігаємо в змінну
     arrWagons  = JSON.parse(JSON.stringify(data));
+    numtask = 0;
     InitObjects();
   })
   .catch(error => console.error(error));
