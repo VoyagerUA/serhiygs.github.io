@@ -165,7 +165,7 @@ function RailMake(){
 // Промальовка вагонів
 function WagonsPaint(){
 
-  fetch('http://127.0.0.1:5500/wagons.txt')
+  fetch('https://serhiygs.github.io/frontend/002/wagons.txt')
   .then(response => response.json())
   .then(data => {
     /*
