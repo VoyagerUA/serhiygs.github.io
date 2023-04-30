@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(250, 237, 237);
+}
+#messages{
+    visibility: hidden;
+    padding: 5px;
+    position: absolute;
+    color: white;
+    font-size: 1.2vmax;
+
+    left: 0.5%;
+    top: 5%;
+ 
+}
+.parentblock{
+    position: absolute;
+    bottom: 0%;
+
+    width: 100%;
+    height: 80%;
+    background-color: black;
+}
+
+#moveButton{
+  display: none;
+  padding: 2%;
+  position: absolute;
+  left: 45%;
+  top: 10%;
+
+}
+
+#test{
+    display: none;
+    padding: 30px;
+    background-color: brown;
+    position: absolute;
+    /*left: 200px;    top: 300px;*/
+}
+/*button:hover{  transform: scale(0.5);}*/
+/*.rotate {  transform: rotate(360deg);}*/
+
+#person_animationtravel1{
+    background-color: brown;
+    background-image: url('../img/kydok1.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.zapys_content{
+    /*align-self: stretch;*/
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    text-align: center;
+
+    /*border: 1px solid red;*/
+}
+
+#titul{
+    position: absolute;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    color: darkblue;
+    color: rgb(2, 26, 80);
+    font-size: 1.8vmax;
+
+
+
+}
