@@ -1,19 +1,19 @@
 "use strict"
 // Глобальні змінні 
 var FlagStart = false;
-var parentElement;
-var pw;
-var ph;
-var pmax;
-var pmin;
-var scene;
-var person;
-var thing;
-var tasksblocks;
+var parentElement = null;
+var pw = 0;
+var ph = 0;
+var pmax = 0;
+var pmin = 0;
+var scene = null;
+var person = null;
+var thing = null;
+var tasksblocks = null;
 
-var wagons;
+var wagons = null;
 var arrWagons = [];
-var animationIdWagonAnimate;
+var animationIdWagonAnimate = null;
 
 let randomLeft = 0;
 let randomTop = 0;
@@ -60,7 +60,25 @@ function StartAnimationTravel(address){
     .then(data => {
       // Розшифровуємо дані з файлу та зберігаємо в змінну
       arrWagons  = JSON.parse(JSON.stringify(data));
+
+      parentElement = null;
+      pw = 0;
+      ph = 0;
+      pmax = 0;
+      pmin = 0;
+      scene = null;
+      person = null;
+      thing = null;
+      tasksblocks = null;
+            
+      wagons = null;
+      animationIdWagonAnimate = null;
+            
+      randomLeft = 0;
+      randomTop = 0;
       numtask = 0;
+
+
       InitObjects();
     })
     .catch(error => console.error(error));
@@ -197,7 +215,7 @@ function ThingPaint(fotka, pokaz){
     thing.style.width = thingWidth*(pmin * 0.025)+'px';
     thing.style.height = thingHeight*(pmin * 0.025)+'px';
 
-    thing.style.transition = "left 0.5s ease-out, top 0.5s ease-out, transform 0.5s ease-in-out";
+    thing.style.transition = "left 1.0s ease-out, top 1.0s ease-out, transform 1.0s ease-in-out";
     //thing.style.transition = "all 0.5s ease-out";
 
     //thing.style.transform = `scale(${0.5}) rotateZ(360deg)`;
