@@ -75,16 +75,20 @@
   <script src="./animationtravel.js"></script>
   <script>
     window.onload = ()=>{
-      StartAnimationTravel(`https://serhiygs.github.io/frontend/003`);
       FlagStart = true;  
-
+      StartAnimationTravel(`http://127.0.0.1:5500`);
     }    
 
     window.addEventListener('resize', function(){
       //parentElement.removeChild(scenaanimationtravel);      scena = new Scena(parentElement);      scena.init();//InitThing();
-      StartAnimationTravel(`https://serhiygs.github.io/frontend/003`);
+      FlagStart = false;
 
-      FlagStart = true;  
+      setTimeout(() => {
+        FlagStart = true;  
+        StartAnimationTravel(`http://127.0.0.1:5500`);
+      }, 2000);
+
+      //console.log(FlagStart);
 
     });
 
